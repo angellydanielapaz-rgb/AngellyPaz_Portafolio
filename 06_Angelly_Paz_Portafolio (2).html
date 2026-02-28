@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional | Angelly Paz</title>
+    <style>
+        :root {
+            --rosa-fuerte: #d81b60;
+            --rosa-claro: #fce4ec;
+            --lila-fondo: #f3e5f5;
+            --texto: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: var(--texto);
+            scroll-behavior: smooth;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .btn-nav {
+            background: var(--rosa-fuerte);
+            color: white;
+            padding: 8px 18px;
+            margin: 0 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 13px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-nav:hover {
+            background: #ad1457;
+            transform: translateY(-2px);
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .cv-container {
+            max-width: 950px;
+            margin: 20px auto;
+            background: white;
+            display: flex; 
+            min-height: 1400px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* BARRA IZQUIERDA */
+        .sidebar {
+            width: 30%;
+            background-color: var(--rosa-claro);
+            padding: 40px 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .foto-marco {
+            blob:https://web.whatsapp.com/ffec5475-432d-49c3-9657-eb97839a7018
+            width: 160px;
+            height: 160px;
+            background: white;
+            border: 3px solid var(--rosa-fuerte);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .foto-marco img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar h3 {
+            color: var(--rosa-fuerte);
+            font-size: 16px;
+            border-bottom: 2px solid var(--rosa-fuerte);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* LADO DERECHO */
+        .main-content {
+            width: 70%;
+            padding: 40px 50px;
+            box-sizing: border-box;
+        }
+
+        .header-nombre {
+            border-bottom: 5px solid var(--rosa-fuerte);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .header-nombre h1 {
+            margin: 0;
+            font-size: 32px;
+            color: var(--rosa-fuerte);
+        }
+
+        .seccion-v {
+            margin-bottom: 35px;
+        }
+
+        .titulo-v {
+            background: var(--lila-fondo);
+            color: var(--rosa-fuerte);
+            padding: 10px;
+            font-weight: bold;
+            border-left: 5px solid var(--rosa-fuerte);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .item-cv {
+            margin-bottom: 20px;
+        }
+
+        .item-cv h4 {
+            margin: 0;
+            color: #000;
+        }
+
+        .fecha-lugar {
+            color: var(--rosa-fuerte);
+            font-size: 14px;
+            font-weight: bold;
+            margin: 2px 0 10px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-box {
+            background: #eee;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 3px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#perfil" class="btn-nav">PERFIL</a>
+        <a href="#estudios" class="btn-nav">ESTUDIOS</a>
+        <a href="#tecnico" class="btn-nav">CONOCIMIENTOS</a>
+        <a href="#metas" class="btn-nav">METAS</a>
+    </nav>
+
+    <div class="cv-container">
+        <div class="sidebar">
+            <div class="foto-marco">
+                <img src="blob:https://web.whatsapp.com/ffec5475-432d-49c3-9657-eb97839a7018" alt="Foto Angelly">
+            </div>
+
+            <h3>CONTACTO</h3>
+            <p>📍 Comayagua, Honduras</p>
+            <p>📞 +504 9XXX-XXXX</p>
+            <p>📧 angelly.paz@ejemplo.com</p>
+
+            <h3>IDIOMAS</h3>
+            <p>• Español (Nativo)<br>• Inglés (Técnico)</p>
+
+            <h3>EXTRAS</h3>
+            <p>• Microsoft Office<br>• Edición Gráfica<br>• Liderazgo Marista</p>
+        </div>
+
+        <div class="main-content">
+            <div class="header-nombre" id="perfil">
+                <h1>Angelly Daniela Paz Doblado</h1>
+                <p><strong>Bachillerato Técnico Profesional en Informática</strong></p>
+            </div>
+
+            <div class="seccion-v">
+                <div class="titulo-v">Perfil Profesional</div>
+                <p>Estudiante de 17 años del <strong>Instituto Marista La Inmaculada</strong>. Soy una persona dedicada, con formación técnica sólida y valores éticos. Me especializo en el área de informática, con capacidad para resolver problemas técnicos y desarrollar proyectos digitales creativos.</p>
+                <p>Nacida el 30 de noviembre de 2009 en Comayagua.</p>
+            </div>
+
+            <div class="seccion-v" id="estudios">
+                <div class="titulo-v">Formación Académica</div>
+                <div class="item-cv">
+                    <h4>Bachillerato Técnico Profesional en Informática</h4>
+                    <p class="fecha-lugar">Instituto Marista La Inmaculada | 2022 - 2026</p>
+                    <ul>
+                        <li>Especialización en desarrollo de sistemas y redes.</li>
+                        <li>Participación en proyectos de soporte técnico institucional.</li>
+                        <li>Formación en valores y liderazgo juvenil basado en el carisma Marista.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="seccion-v" id="tecnico">
+                <div class="titulo-v">Habilidades Técnicas</div>
+                <div class="item-cv">
+                    <h4>Computación y Sistemas</h4>
+                    <div class="skills-container">
+                        <div class="skill-box">Mantenimiento de PC</div>
+                        <div class="skill-box">Instalación de Redes</div>
+                        <div class="skill-box">HTML5 / CSS3</div>
+                        <div class="skill-box">Soporte Técnico</div>
+                        <div class="skill-box">VS Code</div>
+                        <div class="skill-box">Windows/Linux</div>
+                        <div class="skill-box">Lógica de Programación</div>
+                    </div>
+                </div>
+                <div class="item-cv">
+                    <h4>Software de Productividad</h4>
+                    <p>Manejo avanzado de herramientas como Microsoft Word, Excel y PowerPoint para la gestión de datos y creación de reportes técnicos profesionales.</p>
+                </div>
+            </div>
+
+            <div class="seccion-v" id="metas">
+                <div class="titulo-v">Experiencia y Logros</div>
+                <div class="item-cv">
+                    <h4>Práctica de Laboratorio Marista</h4>
+                    <p>Encargada de la configuración y optimización de software en equipos del centro educativo, asegurando el rendimiento óptimo para el uso estudiantil.</p>
+                </div>
+                <div class="item-cv">
+                    <h4>Liderazgo en Proyectos IT</h4>
+                    <p>Coordinación de equipos de trabajo para la creación de maquetas de red física y lógica, proponiendo mejoras tecnológicas para la institución.</p>
+                </div>
+            </div>
+
+            <div class="seccion-v">
+                <div class="titulo-v">Mis Objetivos</div>
+                <p>Mi meta inmediata es culminar mis estudios con excelencia académica y continuar mi formación profesional en la carrera de <strong>Ingeniería en Sistemas</strong>. Mi visión es convertirme en una profesional líder que aporte soluciones tecnológicas innovadoras en mi país.</p>
+            </div>
+
+            <p style="color: #999; font-size: 12px; text-align: center; margin-top: 50px;">
+                © 2026 - Angelly Paz - Comayagua, Honduras
+            </p>
+        </div> 
+    </div> 
+</body>
+</html>
